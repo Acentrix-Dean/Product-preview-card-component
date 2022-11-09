@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(249, 240, 241);
+    overflow: hidden;
+    text-align: left;
+}
+.mainimageone img {
+    max-width: 325px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.mainimagetwo img {
+    max-width: 325px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: none;
+}
+.maincontent {
+    position: relative;
+    box-sizing: border-box;
+    background-color: white;
+    max-width: 325px;
+    padding: 15px;
+    margin-top: -4px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-bottom: 35px;
+}
+.maincontent span.perfume {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: #6c7289
+}
+.maincontent h1 {
+    font-family: 'Fraunces', serif;
+}
+.maincontent p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #6c7289
+}
+section {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.maincontent p span.oldprice {
+    text-decoration: line-through;
+    color: #6c7289;
+    font-size: 0.5em;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.maincontent p.newprice {
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    word-spacing: 10px;
+}
+button {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 0.5rem;
+    bottom: 10px;
+    width: 295px;
+    height: 50px;
+}
+button:hover {
+    cursor: pointer;
+    background-color:hsl(158, 35%, 24%)
+}
+
+/* responsive design */
+
+@media screen and (min-width: 600px) {
+    section {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+        transform: scale(0.7);
+    }
+    .mainimagetwo img {
+        display: inline-block;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0.5rem;
+        transform: scale(0.698);
+        position: relative;
+        left: 25px;
+    }
+    .mainimageone img {
+        display:none;
+    }
+    .maincontent {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        right: 24px;
+        z-index: 1;
+    }
+    button {
+        max-width: 88%;
+    }
+}
+@media screen and (min-width: 1050px) {
+    section {
+        transform: scale(0.8);
+    }
+}
+@media screen and (min-width: 1200px) {
+    section {
+        transform: scale(0.9);
+    }
+}
+@media screen and (min-width: 1400px) {
+    section {
+        transform: scale(1);
+    }
+    .mainimageone img {
+        display:none;
+    }
+}
